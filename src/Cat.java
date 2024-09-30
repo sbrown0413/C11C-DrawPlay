@@ -29,6 +29,13 @@ public class Cat {
 		// Draw the head
 		g2.setColor(Color.black);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
+		// Draw the ears
+		int[] ear1X = {60, 70, 120};
+		int[] ear1Y = {30, 90, 80};
+		g2.fillPolygon(ear1X, ear1Y, 3);
+		int[] ear2X = {170, 230, 240};
+		int[] ear2Y = {80, 90, 30};
+		g2.fillPolygon(ear2X, ear2Y, 3);
 		// Draw the eyes
 		g2.setColor(Color.red);
 		x = catX + EYE_X; 
@@ -45,11 +52,10 @@ public class Cat {
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
 		g2.drawString("Meow :3", catX + HEAD_DIMENSION , catY);
-		// Draw whiskers
+		// Draw the whiskers
 		g2.setColor(Color.white);
 		g2.drawString("-------           -------", 110, 170);
 		g2.drawString("-------           -------", 110, 160);
 		g2.drawString("-------           -------", 110, 150);
-		
 	}
 }
