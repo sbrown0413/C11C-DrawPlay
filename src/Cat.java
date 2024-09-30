@@ -44,6 +44,12 @@ public class Cat {
 		g2.setColor(Color.black);
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
-		g2.drawString("Meow :3", catX + HEAD_DIMENSION , catY);	
+		g2.drawString("Meow :3", catX + HEAD_DIMENSION , catY);
+		// Draw whiskers
+		g2.setColor(Color.white);
+		g2.drawString("-------           -------", 110, 170);
+		g2.drawString("-------           -------", 110, 160);
+		g2.drawString("-------           -------", 110, 150);
+		
 	}
 }
